@@ -26,7 +26,7 @@ export function EditableParagraph({ initialText, onTextChange }: EditableParagra
   }, [text, isEditing])
 
   return (
-    <div className="mb-4">
+    <div className="mb-4 border-b last:border-b-0 border-gray-200">
       {isEditing ? (
         <textarea
           ref={textareaRef}
@@ -41,12 +41,16 @@ export function EditableParagraph({ initialText, onTextChange }: EditableParagra
           onClick={() => setIsEditing(true)}
           className="cursor-text p-2 hover:bg-gray-100 rounded whitespace-pre-line"
         >
-          {text.split('\n').map((line, i) => (
-            <span key={i}>
-              {line || <span className="text-gray-400">ここをクリックして編集...</span>}
-              <br />
-            </span>
-          ))}
+          {text ? (
+            text.split('\n').map((line, i) => (
+              <span key={i}>
+                {line}
+                <br />
+              </span>
+            ))
+          ) : (
+            <span className="text-gray-400">ここをクリックして編集...</span>
+          )}
         </p>
       )}
     </div>
