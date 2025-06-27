@@ -64,22 +64,14 @@ AI Agentにより、設定・プロット・本文の相談、自動執筆、出
       - ユーザーがその内容を取り込むか、あるいは拒否することができる
 
 ## ドメイン
-- Scenario
-  - id
+- Project
   - title
-  - setting
 - Scene
-  - id
-  - scenario_id
+  - project_id
   - text
-  - setting
   - order
 - Character
-  - id
   - name
-  - text
+  - setting
 - Idea
-  - id
-  - scenario_id
-  - scene_id
   - text
