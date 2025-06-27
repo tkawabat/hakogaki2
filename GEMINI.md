@@ -22,7 +22,10 @@
 ### ディレクトリ構造
 ```
 hakogaki2/
-├── doc/                         # プロジェクトドキュメント
+├── docs/                        # プロジェクトドキュメント
+├── migrations/                  # データベースマイグレーション
+│   ├── schemas/                 # create sqls
+│   ├── seeds/                   # Seed Data
 ├── public/                      # 静的ファイル
 ├── src/                         # ソースコード
 │   ├── app/                     # Next.js App Router
@@ -30,5 +33,6 @@ hakogaki2/
 │   ├── hooks/                   # カスタムフック
 │   ├── styles/                  # スタイルファイル
 │   └── types/                   # TypeScript型定義
+├── supabase/                    # このディレクトリは使わない
 ```
 
