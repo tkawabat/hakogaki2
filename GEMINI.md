@@ -1,5 +1,18 @@
 # Agent Rules
 
+## Role
+あなたに役割を与えられたら、必ずこのファイルに加えて、役割ごとに指定されたファイルを読んでからタスクに取り組んでください。
+* プロジェクトマネージャー（PM）
+  * 読むファイル
+    * `instructions/manager.md`
+  * 役割の指定方法
+    * 例：`Role: PM` 
+* 開発者
+  * 読むファイル
+    * `instructions/developer.md`
+  * 役割の指定方法
+    * 例：`Role: Dev-2` 
+
 ## 言語ルール
 - すべてのレスポンスは日本語で行うこと
 - タスクが完了したか、人の入力が必要な場合は、必ず一回コマンド`afplay /System/Library/Sounds/Glass.aiff`を実行して音を鳴らしてください。
