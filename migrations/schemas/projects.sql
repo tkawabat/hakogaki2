@@ -3,7 +3,7 @@ CREATE TABLE projects (
     created_at TIMESTAMP WITH TIME ZONE DEFAULT now(),
     updated_at TIMESTAMP WITH TIME ZONE DEFAULT now(),
     deleted_at TIMESTAMP WITH TIME ZONE,
-    user_id UUID NOT NULL REFERENCES users(id) ON DELETE CASCADE
+    user_id UUID NOT NULL REFERENCES users(id) ON DELETE CASCADE,
     title TEXT UNIQUE NOT NULL,
     character TEXT,
     world TEXT,
