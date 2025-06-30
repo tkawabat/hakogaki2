@@ -69,6 +69,7 @@ AI Agentにより、設定・プロット・本文の相談、自動執筆、出
 - Scene
   - project_id
   - text
+  - plot
   - order
 - Character
   - name
