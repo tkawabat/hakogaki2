@@ -24,7 +24,7 @@
 #### バックエンド・フロントエンド
 - **言語**: TypeScript
 - **フレームワーク**: Next.js（App Router）
-- **UIライブラリ**: React
+- **UIライブラリ**: React, shadcn/ui
 - **スタイリング**: Tailwind CSS
 - **パッケージマネージャー**: pnpm
 - **リンター**: ESLint
