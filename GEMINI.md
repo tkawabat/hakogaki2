@@ -35,6 +35,7 @@
 ### ディレクトリ構造
 ```
 hakogaki2/
+├── components.json              # shadcn/ui設定ファイル
 ├── docs/                        # プロジェクトドキュメント
 ├── migrations/                  # データベースマイグレーション
 │   ├── schemas/                 # create sqls
@@ -43,7 +44,9 @@ hakogaki2/
 ├── src/                         # ソースコード
 │   ├── app/                     # Next.js App Router
 │   ├── components/              # Reactコンポーネント
+│   │   └── ui/                  # shadcn/uiコンポーネント
 │   ├── hooks/                   # カスタムフック
+│   ├── lib/                     # ユーティリティ
 │   ├── styles/                  # スタイルファイル
 │   └── types/                   # TypeScript型定義
 ├── supabase/                    # このディレクトリは使わない
